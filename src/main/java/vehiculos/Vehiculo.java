@@ -20,6 +20,8 @@ public class Vehiculo {
         this.peso = peso;
         this.traccion = traccion;
         this.fabricante = fabricante;
+        this.fabricante.getPais().venta ++;
+        this.fabricante.venta ++;
         cantidadVehiculos ++;
     }
 
@@ -77,5 +79,11 @@ public class Vehiculo {
     }
     public static int getCantidadVehiculos(){
         return cantidadVehiculos;
+    }
+
+    public String vehiculosPorTipo(){
+        return "Automoviles: " + Automovil.automoviles+ "\n"+
+                "Camionetas: " + Camioneta.camionetas + "\n" +
+                "Camiones: " + Camion.camiones;
     }
 }

@@ -2,6 +2,7 @@ package vehiculos;
 
 public class Camion extends Vehiculo{
     int ejes;
+    static int camiones;
 
     public Camion(String placa, String nombre, int precio, int peso, Fabricante fabricante, int ejes){
         setNombre(nombre);
@@ -13,6 +14,7 @@ public class Camion extends Vehiculo{
         setVelocidadMaxima(80);
         setTraccion("4X2");
         this.ejes = ejes;
+        camiones++;
     }
 
     public void setEjes(int ejes){

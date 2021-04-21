@@ -2,6 +2,7 @@ package vehiculos;
 
 public class Automovil extends Vehiculo{
     int puestos;
+    static int automoviles = 0;
 
     public Automovil(String placa, String nombre, int precio, int peso, Fabricante fabricante, int puestos){
         setPlaca(placa);
@@ -13,6 +14,7 @@ public class Automovil extends Vehiculo{
         setVelocidadMaxima(100);
         setTraccion("FWD");
         this.puestos = puestos;
+        automoviles ++;
 
     }
 
