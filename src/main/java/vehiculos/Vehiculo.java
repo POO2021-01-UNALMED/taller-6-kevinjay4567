@@ -52,8 +52,8 @@ public class Vehiculo {
     public void setTraccion(String traccion){
         this.traccion = traccion;
     }
-    public static void setCantidadVehiculos(int cantidadVehiculos1) {
-        cantidadVehiculos = cantidadVehiculos1;
+    public static void setCantidadVehiculos(int k){
+        cantidadVehiculos = k ;
     }
 
     public String getNombre(){

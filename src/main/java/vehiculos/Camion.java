@@ -5,14 +5,7 @@ public class Camion extends Vehiculo{
     static int camiones;
 
     public Camion(String placa, String nombre, int precio, int peso, Fabricante fabricante, int ejes){
-        setNombre(nombre);
-        setPlaca(placa);
-        setPrecio(precio);
-        setPeso(peso);
-        setFabricante(fabricante);
-        setPuertas(2);
-        setVelocidadMaxima(80);
-        setTraccion("4X2");
+        super(placa, 2, 80, nombre, precio, peso, "4X2", fabricante);
         this.ejes = ejes;
         camiones++;
     }
