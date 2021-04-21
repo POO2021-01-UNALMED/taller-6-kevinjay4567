@@ -6,11 +6,12 @@ public class Fabricante {
     private String nombre;
     private Pais pais;
     static ArrayList<Fabricante> fabricantes = new ArrayList<>();
-    int venta;
+    public int venta;
 
     public Fabricante(String nombre, Pais pais){
         this.nombre = nombre;
         this.pais = pais;
+        fabricantes.add(this);
     }
     public Fabricante(){
 
@@ -37,12 +38,12 @@ public class Fabricante {
                 mayor = fabricante.venta;
             }
         }
-        Fabricante paisR = new Fabricante();
-        for(Fabricante fabricante : fabricantes){
-            if(fabricante.venta == mayor){
-                paisR = fabricante;
+        Fabricante MayorF = new Fabricante();
+        for(Fabricante fabricanteM : fabricantes){
+            if(fabricanteM.venta == mayor){
+                MayorF = fabricanteM;
             }
         }
-        return paisR;
+        return MayorF;
     }
 }
